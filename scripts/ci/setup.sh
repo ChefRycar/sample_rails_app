@@ -14,7 +14,9 @@ npm install sharp --build-from-source
 echo 'npm audit fix --force'
 npm audit fix --force
 
+echo 'yarn add'
 yarn add jquery@3.5.1 bootstrap@3.4.1
+echo 'yarn install'
 yarn install
 
 bundle exec rake db:migrate
