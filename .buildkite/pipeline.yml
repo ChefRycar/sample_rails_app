@@ -1,0 +1,5 @@
+steps:
+  - name: ":rspec:"
+    command: "scripts/ci/setup.sh"
+    agents:
+      queue: "local"
