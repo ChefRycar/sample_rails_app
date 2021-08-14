@@ -2,15 +2,19 @@
 
 set -eu
 
-gem install bundle
-
-bundle install --without production
+gem install bundler -v 2.2.17
+bundle _2.2.17_ config set --local without 'production'
+bundle _2.2.17_ install
 
 # Mac M1 Build Nonsense
+echo 'npm install libvips'
 npm install libvips
+echo 'npm install sharp'
 npm install sharp --build-from-source
+echo 'npm audit fix --force'
 npm audit fix --force
 
+yarn add jquery@3.5.1 bootstrap@3.4.1
 yarn install
 
 bundle exec rake db:migrate
