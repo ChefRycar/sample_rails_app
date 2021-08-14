@@ -10,7 +10,8 @@
     "jquery": "3.5.1",
     "libvips": "^0.0.2",
     "sharp": "^0.28.3",
-    "turbolinks": "^5.2.0"
+    "turbolinks": "^5.2.0",
+    "yarn": "^1.22.11"
   },
   "version": "0.1.0",
   "devDependencies": {
