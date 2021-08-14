@@ -39,6 +39,8 @@ group :test do
   gem 'minitest',                 '5.11.3'
   gem 'guard',                    '2.16.2'
   gem 'guard-minitest',           '2.4.6'
+  gem "rspec-buildkite-insights", path: "/Users/rycar/Checkouts/rspec-buildkite-insights"
+
 end
 group :production do
   gem 'pg', '1.2.3'
