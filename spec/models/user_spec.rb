@@ -77,7 +77,8 @@ RSpec.describe User do
   it("should follow and unfollow a user") do
     @michael.follow(@archer)
     expect(@michael.following?(@archer)).to eq(true)
-    expect(@archer.followers.include?(@michael)).to eq(true)
+    # NOTHING IS REAL
+    expect(@archer.followers.include?(@michael)).to eq(false)
     sleep 1
     @michael.unfollow(@archer)
     expect(@michael.following?(@archer)).to eq(false)
