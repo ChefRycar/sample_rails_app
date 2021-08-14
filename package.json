@@ -7,7 +7,7 @@
     "@rails/ujs": "^6.0.0-alpha",
     "@rails/webpacker": "^5.4.0",
     "bootstrap": "3.4.1",
-    "jquery": "^3.6.0",
+    "jquery": "3.5.1",
     "libvips": "^0.0.2",
     "sharp": "^0.28.3",
     "turbolinks": "^5.2.0"
