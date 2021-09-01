@@ -3,3 +3,6 @@ steps:
     command: "scripts/ci/setup.sh"
     agents:
       queue: "local"
+
+notify:
+  - pagerduty_change_event: "24b2749165a9430fd012f061676705c2"
