@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-require 'rspec/buildkite/insights'
+require 'rspec/buildkite/analytics'
 
 RSpec::Buildkite::Insights.configure do |config|
     # defaults, baby!
