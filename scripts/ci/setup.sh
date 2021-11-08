@@ -2,8 +2,17 @@
 
 set -u
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+git clone git://github.com/rbenv/rbenv.git ~/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+source ~/.bashrc
+
+# Install ruby-build system-widely
+git clone git://github.com/rbenv/ruby-build.git /tmp/ruby-build
+cd /tmp/ruby-build
+sudo ./install.sh
+
+rbenv install 2.4.1 && rbenv global 2.4.1
 
 gem install bundler -v 2.2.17
 bundle _2.2.17_ config set --local without 'production'
