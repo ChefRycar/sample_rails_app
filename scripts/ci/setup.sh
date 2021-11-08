@@ -2,6 +2,9 @@
 
 set -u
 
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
 gem install bundler -v 2.2.17
 bundle _2.2.17_ config set --local without 'production'
 bundle _2.2.17_ install
