@@ -3,9 +3,9 @@
 set -u
 
 git clone git://github.com/rbenv/rbenv.git ~/.rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-source ~/.bashrc
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+source ~/.bash_profile
 
 # Install ruby-build system-widely
 git clone git://github.com/rbenv/ruby-build.git /tmp/ruby-build
