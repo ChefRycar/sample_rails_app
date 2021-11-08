@@ -6,10 +6,10 @@ git clone git://github.com/rbenv/rbenv.git ~/.rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# Install ruby-build system-widely
-git clone git://github.com/rbenv/ruby-build.git /tmp/ruby-build
-cd /tmp/ruby-build
-./install.sh
+# Install ruby-build as rbenv plugin
+mkdir -p "$(rbenv root)"/plugins
+git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+
 
 rbenv install 2.4.1 && rbenv global 2.4.1
 
